@@ -9,16 +9,16 @@ public class DivFactory extends Factory {
 
     @Override
     public Link createLink(String caption, String url) {
-        return null;
+        return new DivLink(caption, url);
     }
 
     @Override
     public Tray createTray(String caption) {
-        return null;
+        return new DivTray(caption);
     }
 
     @Override
     public Page createPage(String title, String author) {
-        return null;
+        return new DivPage(title, author);
     }
 }
